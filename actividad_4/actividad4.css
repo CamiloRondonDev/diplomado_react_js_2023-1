@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+    background-color: rgb(213, 218, 218);
+}
+
+.foto_camilo {
+    height: 10%;
+    width: 20%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
