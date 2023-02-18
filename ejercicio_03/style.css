@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family: 'rotobo_font';
+    src: url("./fonts/roboto/Roboto-Black.ttf");
+}
+
+.font_roboto {
+    font-family: 'rotobo_font';
+}
+
+body {
+    text-align: center;
+    background-color: rgb(149, 179, 207);
+}
+
+img {
+    max-width: 220px;
+    min-height:  230px;
+    border: 2px solid ;
+}
+
+.principal {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgb(214, 230, 245);
+}
+h1{
+    font-family: 'rotobo_font';
+    font-size: 30px;
+}
+
