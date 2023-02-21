@@ -1,0 +1,84 @@
+:root{
+    --primario : #5a6666;
+    --blanco: #fff;
+    --negro: #0000;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-color: var(--primario);
+}
+.titulo span{
+    font-size: 2rem;
+}
+header h1{
+    margin-inline: 35%;
+    color: var(--blanco);
+    text-align: center;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 55rem);
+    justify-content: center;
+}
+
+div img {
+    max-width: 450px;
+    max-height: 400px;
+    
+}
+.box-model_img{
+    margin-left: 28px;
+}
+
+
+.box-model{
+    background-color: #c1c5c3;
+    border: solid 3px #5a6666;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 3rem;
+    margin-bottom: 3rem;
+}
+.box-model:hover{
+    border: #212121 solid 3px;
+}
+
+.div-texto{
+    background-color:#c1c5c3;
+    padding-bottom: 4rem;
+    min-height: 20rem;
+}
+.box-model h2, .box-model p{
+    color: black;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.box-model h2{
+    font-size: 4rem;
+    font-weight: bold
+}
+
+.volver a{
+    background-color: rgb(226, 13, 66);
+    color: var(--blanco);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: .5rem ;
+    align-items: center;
+  
+}
+.volver:hover{
+    padding: 5px;
+
+}
