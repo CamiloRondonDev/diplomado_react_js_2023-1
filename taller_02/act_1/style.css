@@ -23,6 +23,8 @@ h1{
     background-color: rgb(39, 35, 102);
     padding: 100px;
     height: auto;
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 
@@ -79,6 +81,8 @@ a{
 }
 .principal{
     display: grid;
+    max-width: 120rem;
+    margin: 0 auto;
     padding: 10px 60px;
     grid-template-columns: 100%;
     background-color: rgb(130, 130, 143);
