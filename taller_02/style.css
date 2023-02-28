@@ -1,0 +1,12 @@
+.menu{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 100px 100px;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    background-color: red;
+    padding: 50px;
+    margin-top: 200px;
+}

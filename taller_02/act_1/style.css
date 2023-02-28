@@ -1,0 +1,106 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;/* para que no afecte el paddin por los bordes */
+}
+*, *:before, *:after{
+    box-sizing: inherit;/* para solucionar lo del paddin y va con lo que esta arriba */
+}
+/* globales */
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;/* interlineado */
+}
+h1{
+    color:rgb(255, 255, 255) ;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 29px;
+}
+
+.header_baner{
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: rgb(39, 35, 102);
+    margin: 0 300px;
+    margin-top: 20px;
+    height: auto;
+}
+
+
+@media (min-width: 1000px) {
+    .header_baner{
+    grid-template-columns: 30% 70%;
+    height: auto;
+    }
+    
+    h1{
+        padding: 0px;
+        font-size: 65px;
+        line-height: 1;/* interlineado */
+
+    }
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 49, 131);
+    margin-top: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 20px;
+}
+body{
+    background-color: rgb(193, 201, 201);
+}
+img {
+    border-radius: 50%;
+    width: 180px; /* Ancho fijo para la imagen */
+    height: 180px; /* Altura fija para la imagen */
+  }
+  li{
+    list-style: none;
+    line-height: 1.5;/* interlineado */
+    text-indent: -40px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+.header_baner_item{
+    /* background-color: red; */
+    text-align: center;
+    height: 180px;
+    
+    
+}
+.principal{
+    display: grid;
+    margin:  0 300px;
+    grid-template-columns: 100%;
+    background-color: rgb(130, 130, 143);
+}
+
+@media (min-width: 1000px) {
+    .principal{
+        grid-template-columns: repeat(2,50%);
+    }
+ 
+}
+.principal--item{
+    background-color: rgb(143, 143, 160);
+    text-align: center;
+    height: auto;
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid rgb(119, 117, 117);
+}
+@media (min-width: 1000px) {
+    .principal--item{
+        height: auto;
+    }
+} 
