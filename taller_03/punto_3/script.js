@@ -4,25 +4,28 @@ let interes = 1.5;
 
 let valAhorrado = 50000000;
 let ahorCesantias = 70000000;
-let meses = 240;
+let meses = 0;
 
 let valorDeuda, valMes, valMesIntereses, cuotaInteres;
-let nuevCuota;
 let totalPagado = 0;
 
 valorDeuda = (valInmueble + gastEstructuracon) - (valAhorrado + ahorCesantias)
-valMes = valorDeuda / meses;
-//primer punto
-for (let i = 1; i <= meses; i++) {
+valMes = 5000000;
+//segundo punto
+do{
+    meses +=1;
+ if(valorDeuda<valMes){
+        valMes = valorDeuda;
+    }
     valMesIntereses = valorDeuda * 0.015;
     cuotaInteres = valMes + valMesIntereses;
-    console.log("el valor a pagar del mes " + i + " sera de " + cuotaInteres.toFixed(0));
+    console.log("el valor a pagar del mes " + meses + " sera de " + cuotaInteres.toFixed(0));
     valorDeuda -= valMes;
     totalPagado += cuotaInteres;
-}
-console.log("al final del prestamo termina pagando " + totalPagado.toFixed(0));
+}while(valorDeuda != 0);
 
-//segundo
-console.log("-------------------------------- ");
+console.log("al final del prestamo termina pagando " + totalPagado.toFixed(0));
+console.log("pagando 5.000.000 terminara pangando todo en un total de "+ meses + " meses");
+
 
 
